@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GLib 2.66.4 Docs
+          GLib 2.68.0 Docs
         </a>
          (97% documented)
       </p>
@@ -1252,15 +1252,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateStrftime1s4slen6format0B0SiSpys4Int8VGSg_SiSPyAHGSgxtAA12DateProtocolRzlF">dateStrftime(s:slen:format:date:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib15dateTimeCompare3dt13dt2SiSV_SVtF">dateTimeCompare(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib13dateTimeEqual3dt13dt2SbSV_SVtF">dateTimeEqual(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateTimeHash8datetimeSiSV_tF">dateTimeHash(datetime:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib9dateValid3daySbs5UInt8V_tF">dateValid(day:)</a>
@@ -3648,7 +3639,7 @@ Alternatively, use <code><a href="../Structs/MainContextRef.html">MainContextRef
 type representing a set of sources to be handled in a main loop.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L642-L649">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L646-L655">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -3682,7 +3673,7 @@ type representing a set of sources to be handled in a main loop.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L644">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L648">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3720,7 +3711,37 @@ type representing a set of sources to be handled in a main loop.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L647">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L651">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4GLib19MainContextProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4GLib19MainContextProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>MainContextProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L654">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3776,7 +3797,7 @@ can call <code>g_main_context_prepare()</code>, <code>g_main_context_query()</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L985-L988">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L991-L994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3812,7 +3833,7 @@ a typical event source will use <code>g_source_add_unix_fd()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L993-L996">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L999-L1002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3833,7 +3854,10 @@ a typical event source will use <code>g_source_add_unix_fd()</code> instead.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Passes the results of polling back to the main loop.</p>
+                        <p>Passes the results of polling back to the main loop. You should be
+careful to pass <code>fds</code> and its length <code>n_fds</code> as received from
+<code>g_main_context_query()</code>, as this functions relies on assumptions
+on how <code>fds</code> is filled.</p>
 
 <p>You must have successfully acquired the context with
 <code>g_main_context_acquire()</code> before you may call this function.</p>
@@ -3849,7 +3873,7 @@ a typical event source will use <code>g_source_add_unix_fd()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1002-L1005">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1011-L1014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3886,7 +3910,7 @@ a typical event source will use <code>g_source_add_unix_fd()</code> instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1011-L1014">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1020-L1023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3922,7 +3946,7 @@ the first one found will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1019-L1022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1028-L1031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3967,7 +3991,7 @@ wrong source.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1036-L1039">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1045-L1048">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4003,7 +4027,7 @@ one found will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1044-L1047">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1053-L1056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4037,7 +4061,7 @@ one found will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1050-L1053">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1059-L1062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4091,7 +4115,7 @@ loop (and may prevent this call from returning).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1076-L1079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1085-L1088">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4133,7 +4157,7 @@ thread or with any particular context acquired.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1090-L1093">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1099-L1102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4178,7 +4202,7 @@ be interrupted for other reasons than an event source becoming ready.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1107-L1110">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1116-L1119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4212,7 +4236,7 @@ be interrupted for other reasons than an event source becoming ready.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1113-L1116">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1122-L1125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4247,7 +4271,7 @@ it was on the top of the stack).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1120-L1123">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1129-L1132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4285,7 +4309,7 @@ for polling is determined by calling g_main_context_query ().</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1130-L1133">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1139-L1142">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4356,7 +4380,7 @@ see <code>g_file_supports_thread_contexts()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1173-L1176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1182-L1185">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4377,7 +4401,10 @@ see <code>g_file_supports_thread_contexts()</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Determines information necessary to poll this main loop.</p>
+                        <p>Determines information necessary to poll this main loop. You should
+be careful to pass the resulting <code>fds</code> array and its length <code>n_fds</code>
+as is when calling <code>g_main_context_check()</code>, as this function relies
+on assumptions made when the array is filled.</p>
 
 <p>You must have successfully acquired the context with
 <code>g_main_context_acquire()</code> before you may call this function.</p>
@@ -4393,7 +4420,7 @@ see <code>g_file_supports_thread_contexts()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1182-L1185">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1194-L1197">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4428,7 +4455,7 @@ see <code>g_file_supports_thread_contexts()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1188-L1191">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1200-L1203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4465,7 +4492,7 @@ is called as many times as it was acquired.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1197-L1200">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1209-L1212">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4500,7 +4527,7 @@ polled for a particular context.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1204-L1207">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1216-L1219">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4540,7 +4567,7 @@ loop with an external event loop.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1216-L1219">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1228-L1231">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4575,7 +4602,7 @@ the result is zero, free the context and free all associated memory.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1223-L1226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1235-L1238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4617,7 +4644,7 @@ Use g_main_context_is_owner() and separate locking instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1236-L1239">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1248-L1251">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4652,7 +4679,7 @@ loop with a termination condition, computed from multiple threads:</p>
 
 <p>(C Language Example):</p>
 <pre class="highlight plaintext"><code>  #define NUM_TASKS 10
-  static volatile gint tasks_remaining = NUM_TASKS;
+  static gint tasks_remaining = NUM_TASKS;  // (atomic)
   ...
 
   while (g_atomic_int_get (&amp;tasks_remaining) != 0)
@@ -4678,7 +4705,7 @@ loop with a termination condition, computed from multiple threads:</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1272-L1275">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1284-L1287">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4715,7 +4742,7 @@ blocking to get ownership of <code>context</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1280-L1289">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1292-L1301">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4749,7 +4776,7 @@ blocking to get ownership of <code>context</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1292-L1308">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-List-MainContext.swift#L1304-L1320">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4762,8 +4789,8 @@ blocking to get ownership of <code>context</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

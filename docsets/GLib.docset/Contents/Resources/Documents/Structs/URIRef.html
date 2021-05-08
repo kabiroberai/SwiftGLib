@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GLib 2.66.4 Docs
+          GLib 2.68.0 Docs
         </a>
          (97% documented)
       </p>
@@ -1252,15 +1252,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateStrftime1s4slen6format0B0SiSpys4Int8VGSg_SiSPyAHGSgxtAA12DateProtocolRzlF">dateStrftime(s:slen:format:date:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib15dateTimeCompare3dt13dt2SiSV_SVtF">dateTimeCompare(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib13dateTimeEqual3dt13dt2SbSV_SVtF">dateTimeEqual(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateTimeHash8datetimeSiSV_tF">dateTimeHash(datetime:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib9dateValid3daySbs5UInt8V_tF">dateValid(day:)</a>
@@ -3656,12 +3647,12 @@ help prevent
 security-sensitive decisions.</p>
 <h2 id='relative-and-absolute-uris-a-name-relative-absolute-uris-a' class='heading'>Relative and absolute URIs # <a name="relative-absolute-uris"></a></h2>
 
-<p>As defined in <a href="https://tools.ietf.org/html/rfc3986%60section%60-4">RFC 3986</a>, the
+<p>As defined in <a href="https://tools.ietf.org/html/rfc3986%60section-4%60">RFC 3986</a>, the
 hierarchical nature of URIs means that they can either be ‘relative
 references’ (sometimes referred to as ‘relative URIs’) or ‘URIs’ (for
 clarity, ‘URIs’ are referred to in this documentation as
 ‘absolute URIs’ — although
-<a href="https://tools.ietf.org/html/rfc3986%60section%60-4.3">in constrast to RFC 3986</a>,
+<a href="https://tools.ietf.org/html/rfc3986%60section-4.3%60">in constrast to RFC 3986</a>,
 fragment identifiers are always allowed).</p>
 
 <p>Relative references have one or more components of the URI missing. In
@@ -3740,14 +3731,15 @@ implement these rules. Use <code>g_filename_from_uri()</code> and
 
 <p>Note that there is no <code>g_uri_equal ()</code> function, because comparing
 URIs usefully requires scheme-specific knowledge that <code>GUri</code> does
-not have. For example, <code>http://example.com/</code> and
-<code>http://EXAMPLE.COM:80</code> have exactly the same meaning according
-to the HTTP specification, and <code>data:,foo</code> and
-<code>data:;base64,Zm9v</code> resolve to the same thing according to the
-<code>data:</code> URI specification.</p>
+not have. <code>GUri</code> can help with normalization if you use the various
+encoded <code>GUriFlags</code> as well as <code>G_URI_FLAGS_SCHEME_NORMALIZE</code> however
+it is not comprehensive.
+For example, <code>data:,foo</code> and <code>data:;base64,Zm9v</code> resolve to the same
+thing according to the <code>data:</code> URI specification which GLib does not
+handle.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4496-L4500">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4400-L4404">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -3784,7 +3776,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4499">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4403">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3828,7 +3820,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4504-L4506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4408-L4410">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3859,7 +3851,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4509-L4511">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4413-L4415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3890,7 +3882,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4514-L4517">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4418-L4421">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3921,7 +3913,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4520-L4523">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4424-L4427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3952,7 +3944,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4526-L4529">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4430-L4433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3983,7 +3975,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4532-L4535">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4436-L4439">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4014,7 +4006,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4538-L4540">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4442-L4444">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4046,7 +4038,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4544-L4546">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4448-L4450">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4078,7 +4070,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4550-L4552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4454-L4456">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4110,7 +4102,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4556-L4558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4460-L4462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4142,7 +4134,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4562-L4564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4466-L4468">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4174,7 +4166,7 @@ to the HTTP specification, and <code>data:,foo</code> and
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4568-L4570">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4472-L4474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4209,7 +4201,7 @@ components of the &ldquo;userinfo&rdquo; separately.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4576-L4579">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4480-L4483">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4247,7 +4239,7 @@ if either <code>password</code> or <code>auth_params</code> is non-<code>nil</co
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4589-L4592">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4493-L4496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4280,7 +4272,7 @@ error returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4597-L4603">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-TestConfig-Uri.swift#L4501-L4507">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4293,8 +4285,8 @@ error returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

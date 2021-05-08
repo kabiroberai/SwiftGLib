@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GLib 2.66.4 Docs
+          GLib 2.68.0 Docs
         </a>
          (97% documented)
       </p>
@@ -1252,15 +1252,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateStrftime1s4slen6format0B0SiSpys4Int8VGSg_SiSPyAHGSgxtAA12DateProtocolRzlF">dateStrftime(s:slen:format:date:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib15dateTimeCompare3dt13dt2SiSV_SVtF">dateTimeCompare(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib13dateTimeEqual3dt13dt2SbSV_SVtF">dateTimeEqual(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateTimeHash8datetimeSiSV_tF">dateTimeHash(datetime:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib9dateValid3daySbs5UInt8V_tF">dateValid(day:)</a>
@@ -3647,7 +3638,7 @@ Alternatively, use <code><a href="../Structs/DateRef.html">DateRef</a></code> as
 <p>Represents a day between January 1, Year 1 and a few thousand years in
 the future. None of its members should be accessed directly.</p>
 
-<p>If the <code>GDate</code>-struct is obtained from <code>g_date_new()</code>, it will be safe
+<p>If the <code>GDate-struct</code> is obtained from <code>g_date_new()</code>, it will be safe
 to mutate but invalid and thus not safe for calendrical computations.</p>
 
 <p>If it&rsquo;s declared on the stack, it will contain garbage so must be
@@ -3657,7 +3648,7 @@ becomes valid after you set it to a Julian day or you set a day, month,
 and year.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L21-L28">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L21-L30">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -3734,6 +3725,36 @@ and year.</p>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4GLib12DateProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4GLib12DateProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>DateProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -3778,7 +3799,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L373-L376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L375-L378">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3816,7 +3837,7 @@ the current day in it). The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L383-L386">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L385-L388">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3853,7 +3874,7 @@ to February 28. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L392-L395">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L394-L397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3891,7 +3912,7 @@ All non-<code>nil</code> dates must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L402-L405">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L404-L407">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3928,7 +3949,7 @@ Validity can be tested with <code>g_date_valid()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L411-L414">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L413-L416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3963,7 +3984,7 @@ Both dates must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L418-L421">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L420-L423">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3999,7 +4020,7 @@ as is into the new object.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L426-L429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L428-L431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4035,7 +4056,7 @@ Both dates must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L434-L437">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L436-L439">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4069,7 +4090,7 @@ Both dates must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L440-L443">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L442-L445">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4103,7 +4124,7 @@ Both dates must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L446-L449">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L448-L451">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4138,7 +4159,7 @@ year. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L453-L456">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L455-L458">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4173,7 +4194,7 @@ to ISO 8601.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L460-L463">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L462-L465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4210,7 +4231,7 @@ etc. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L469-L472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L471-L474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4246,7 +4267,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L477-L480">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L479-L482">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4280,7 +4301,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L483-L486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L485-L488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4316,7 +4337,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L491-L494">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L493-L496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4350,7 +4371,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L497-L500">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L499-L502">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4384,7 +4405,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L503-L506">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L505-L508">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4419,7 +4440,7 @@ and swap the values if this is not the case.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L510-L513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L512-L515">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4454,7 +4475,7 @@ day-month-year triplet is invalid, the date will be invalid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L517-L520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L519-L522">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4491,7 +4512,7 @@ set it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L526-L529">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L528-L531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4525,7 +4546,7 @@ set it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L532-L535">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L534-L537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4560,7 +4581,7 @@ day-month-year triplet is invalid, the date will be invalid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L539-L542">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L541-L544">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4604,7 +4625,7 @@ capacity).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L555-L558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L557-L560">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4643,7 +4664,7 @@ Use g_date_set_time_t() instead.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L565-L568">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L567-L570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4687,7 +4708,7 @@ the user&rsquo;s current timezone.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L583-L586">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L585-L588">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4731,7 +4752,7 @@ additional precision.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L597-L600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L599-L602">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4766,7 +4787,7 @@ triplet is invalid, the date will be invalid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L604-L607">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L606-L609">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4802,7 +4823,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L612-L615">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L614-L617">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4839,7 +4860,7 @@ may change. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L621-L624">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L623-L626">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4877,7 +4898,7 @@ must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L631-L634">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L633-L636">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4912,7 +4933,7 @@ Initializes the non-date parts with something safe but meaningless.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L638-L641">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L640-L643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4948,7 +4969,7 @@ if it wasn&rsquo;t allocated by one of the <code>g_date_new()</code> variants.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L646-L649">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L648-L651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4994,7 +5015,7 @@ where the C library only complies to C89.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L664-L667">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L666-L669">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5040,7 +5061,7 @@ where the C library only complies to C89.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L682-L685">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L684-L687">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5074,7 +5095,7 @@ where the C library only complies to C89.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L687-L698">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L689-L700">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5109,7 +5130,7 @@ year. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L702-L709">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L704-L711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5144,7 +5165,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L713-L720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L715-L722">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5179,7 +5200,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L724-L731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L726-L733">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5214,7 +5235,7 @@ to ISO 8601.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L735-L742">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L737-L744">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5251,7 +5272,7 @@ etc. The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L748-L761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L750-L763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5287,7 +5308,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L766-L774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L768-L776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5321,7 +5342,7 @@ The date must be valid.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L777-L788">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L779-L790">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5357,7 +5378,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L793-L801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L795-L803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5391,7 +5412,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L804-L810">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L806-L812">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5425,7 +5446,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L813-L824">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L815-L826">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5459,7 +5480,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L827-L837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L829-L839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5493,7 +5514,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L840-L850">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L842-L852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5527,7 +5548,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L853-L863">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L855-L865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5562,7 +5583,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L867-L879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L869-L881">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5597,7 +5618,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L883-L895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L885-L897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5631,7 +5652,7 @@ Can return 0 if the day is before the first Sunday of the year.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L898-L908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-Date-GLibError.swift#L900-L910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -5644,8 +5665,8 @@ Can return 0 if the day is before the first Sunday of the year.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

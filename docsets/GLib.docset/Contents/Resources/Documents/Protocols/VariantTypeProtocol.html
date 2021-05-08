@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GLib 2.66.4 Docs
+          GLib 2.68.0 Docs
         </a>
          (97% documented)
       </p>
@@ -1252,15 +1252,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateStrftime1s4slen6format0B0SiSpys4Int8VGSg_SiSPyAHGSgxtAA12DateProtocolRzlF">dateStrftime(s:slen:format:date:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib15dateTimeCompare3dt13dt2SiSV_SVtF">dateTimeCompare(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib13dateTimeEqual3dt13dt2SbSV_SVtF">dateTimeEqual(dt1:dt2:)</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Functions.html#/s:4GLib12dateTimeHash8datetimeSiSV_tF">dateTimeHash(datetime:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:4GLib9dateValid3daySbs5UInt8V_tF">dateValid(day:)</a>
@@ -3671,7 +3662,7 @@ may only appear nested inside of arrays.</p>
 
 <p>Just as in D-Bus, GVariant types are described with strings (&ldquo;type
 strings&rdquo;).  Subject to the differences mentioned above, these strings
-are of the same form as those found in DBus.  Note, however: D-Bus
+are of the same form as those found in D-Bus.  Note, however: D-Bus
 always works in terms of messages and therefore individual type
 strings appear nowhere in its interface.  Instead, &ldquo;signatures&rdquo;
 are a concatenation of the strings of the type of each argument in a
@@ -3796,7 +3787,7 @@ that, due to the restriction that the key of a dictionary entry must
 be a basic type, &ldquo;{</em>*}&rdquo; is not a valid type string.</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1709-L1716">Show on GitHub</a>
+                <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1715-L1724">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -3830,7 +3821,7 @@ be a basic type, &ldquo;{</em>*}&rdquo; is not a valid type string.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1711">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1717">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3868,7 +3859,37 @@ be a basic type, &ldquo;{</em>*}&rdquo; is not a valid type string.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1714">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1720">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4GLib19VariantTypeProtocolP3rawxSv_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4GLib19VariantTypeProtocolP3rawxSv_tcfc">init(raw:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Required Initialiser for types conforming to <code>VariantTypeProtocol</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">raw</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L1723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3916,7 +3937,7 @@ be a basic type, &ldquo;{</em>*}&rdquo; is not a valid type string.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2326-L2329">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2334-L2337">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3952,7 +3973,7 @@ call <code>g_free()</code> on the return value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2334-L2337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2342-L2345">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3988,7 +4009,7 @@ call <code>g_free()</code> on the return value.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2342-L2345">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2350-L2353">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4031,7 +4052,7 @@ both arguments, a valid <code>GVariantType</code> must be provided.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2357-L2360">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2365-L2368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4078,7 +4099,7 @@ interface over tuple and dictionary entry types.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2376-L2379">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2384-L2387">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4118,7 +4139,7 @@ type constructor functions.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2388-L2391">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2396-L2399">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4154,7 +4175,7 @@ the memory region returned by <code>g_variant_type_peek_string()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2396-L2399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2404-L2407">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4192,7 +4213,7 @@ the memory region returned by <code>g_variant_type_peek_string()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2406-L2409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2414-L2417">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4230,7 +4251,7 @@ only indefinite types can have subtypes.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2416-L2419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2424-L2427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4268,7 +4289,7 @@ than the additional restriction, this call is equivalent to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2426-L2429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2434-L2437">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4310,7 +4331,7 @@ return 2.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2440-L2443">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2448-L2451">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4354,7 +4375,7 @@ entry then this call returns <code>nil</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2456-L2459">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2464-L2467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4392,7 +4413,7 @@ must call <code>g_variant_type_get_string_length()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2466-L2469">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2474-L2477">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4428,7 +4449,7 @@ must call <code>g_variant_type_get_string_length()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2474-L2477">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2482-L2485">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4496,7 +4517,7 @@ guaranteed to handle nesting up to at least 64 levels.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2514-L2519">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2522-L2527">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4535,7 +4556,7 @@ example.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2526-L2537">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2534-L2545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4577,7 +4598,7 @@ paths and signatures.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2548-L2562">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2556-L2570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4618,7 +4639,7 @@ example.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2572-L2585">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2580-L2593">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4661,7 +4682,7 @@ indefinite type like <code>G_VARIANT_TYPE_ARRAY</code>, however, will result in
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2597-L2612">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2605-L2620">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4700,7 +4721,7 @@ definite subtype is a dictionary entry type &ndash;
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2620-L2631">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2628-L2639">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4739,7 +4760,7 @@ example.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2639-L2650">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2647-L2658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4779,7 +4800,7 @@ example.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2659-L2671">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2667-L2679">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4813,7 +4834,7 @@ example.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2674-L2680">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2682-L2688">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4849,7 +4870,7 @@ the memory region returned by <code>g_variant_type_peek_string()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2685-L2693">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGLib/tree/generated/Sources/GLib/GLib-2.0-VariantBuilder-VariantType.swift#L2693-L2701">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -4862,8 +4883,8 @@ the memory region returned by <code>g_variant_type_peek_string()</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-17)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-05-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
